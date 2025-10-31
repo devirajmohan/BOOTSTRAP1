@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Page</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <style>
+        /* A little bit of extra spacing for a cleaner look */
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 960px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container my-5">
+        
+        <!-- ================== -->
+        <!-- FAQ Section -->
+        <!-- ================== -->
+        <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+
+        <!-- We use the Bootstrap Accordion component for the FAQ -->
+        <!-- This is the simplest way to get clickable "collapse" behavior -->
+        <div class="accordion" id="faqAccordion">
+
+            <!-- FAQ Item 1 -->
+            <div class="accordion-item rounded-3 mb-2 shadow-sm">
+                <h2 class="accordion-header" id="headingOne">
+                    <!-- The button that the user clicks -->
+                    <button class="accordion-button collapsed rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        What is your return policy?
+                    </button>
+                </h2>
+                <!-- The content that is shown/hidden -->
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        You can return any item within 30 days of purchase, provided it is in its original condition with all tags attached. Please visit our returns portal to start the process.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="accordion-item rounded-3 mb-2 shadow-sm">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        How do I track my order?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Once your order has shipped, you will receive an email with a tracking number. You can use this number on the carrier's website to track your package in real-time.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="accordion-item rounded-3 mb-2 shadow-sm">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Do you offer international shipping?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Yes, we ship to over 50 countries worldwide. Shipping costs and delivery times vary by location. Please check our shipping page for more details.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================== -->
+        <!-- Support Team Section -->
+        <!-- ================== -->
+        <h2 class="text-center mb-4 mt-5 pt-3">Our Support Team</h2>
+
+        <div class="row">
+            <!-- Agent 1 -->
+            <div class="col-md-4 mb-4">
+                <!-- Bootstrap Card component -->
+                <div class="card text-center shadow-sm rounded-3">
+                    <div class="card-body">
+                        <img src="https://placehold.co/100x100/663399/FFFFFF?text=AV" class="rounded-circle mb-3" alt="Profile Picture">
+                        <h5 class="card-title">Alex Johnson</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Senior Support Specialist</h6>
+                        
+                        <!-- Bootstrap Dropdown component -->
+                        <div class="dropdown mt-3">
+                            <button class="btn btn-primary dropdown-toggle rounded-pill" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Contact Alex
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Call</a></li>
+                                <li><a class="dropdown-item" href="#">Email</a></li>
+                                <li><a class="dropdown-item" href="#">Message</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Agent 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card text-center shadow-sm rounded-3">
+                    <div class="card-body">
+                        <img src="https://placehold.co/100x100/007bff/FFFFFF?text=BS" class="rounded-circle mb-3" alt="Profile Picture">
+                        <h5 class="card-title">Maria Garcia</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Technical Support Lead</h6>
+                        
+                        <div class="dropdown mt-3">
+                            <button class="btn btn-primary dropdown-toggle rounded-pill" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                Contact Maria
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                <li><a class="dropdown-item" href="#">Call</a></li>
+                                <li><a class="dropdown-item" href="#">Email</a></li>
+                                <li><a class="dropdown-item" href="#">Message</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Agent 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card text-center shadow-sm rounded-3">
+                    <div class="card-body">
+                        <img src="https://placehold.co/100x100/28a745/FFFFFF?text=KD" class="rounded-circle mb-3" alt="Profile Picture">
+                        <h5 class="card-title">Kenji Tanaka</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Customer Success Agent</h6>
+                        
+                        <div class="dropdown mt-3">
+                            <button class="btn btn-primary dropdown-toggle rounded-pill" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                                Contact Kenji
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                                <li><a class="dropdown-item" href="#">Call</a></li>
+                                <li><a class="dropdown-item" href="#">Email</a></li>
+                                <li><a class="dropdown-item" href="#">Message</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS Bundle (includes Popper.js) CDN -->
+    <!-- This is required for the collapse and dropdown functionality -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
